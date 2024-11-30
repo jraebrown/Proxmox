@@ -180,12 +180,12 @@ while true; do
   esac
 done
 
-if ! pveversion | grep -Eq "pve-manager/8.[0-2]"; then
-  msg_error "This version of Proxmox Virtual Environment is not supported"
-  echo -e "Requires Proxmox Virtual Environment Version 8.0 or later."
-  echo -e "Exiting..."
-  sleep 2
-  exit
-fi
+#if ! pveversion | grep -Eq "pve-manager/8.[0-2]"; then
+#  msg_error "This version of Proxmox Virtual Environment is not supported"
+#  echo -e "Requires Proxmox Virtual Environment Version 8.0 or later."
+#  echo -e "Exiting..."
+#  sleep 2
+#  exit
+#fi
 
 start_routines
